@@ -8,6 +8,7 @@
 }
 body {
 	font-family: 'Poppins', sans-serif;
+	overflow-x: hidden;
 }
 
 /* bagian sidebar */
@@ -67,10 +68,14 @@ body {
 /* bagian responsive */
 @media screen and (max-width: 768px) {
 	#sidebar {
-		transform: translateX(450px);
+		z-index: 0;
+		transform: translateX(-250px);
 	}
 	#sidebar-toggle:checked + #sidebar  {
-		transform: translateX(165px);
+		transform: translateX(0px);
+	}
+	#sidebar-toggle:checked ~ .main-content  {
+		margin-left: 250px;
 	}
 	.main-content {
 		margin-left: 0px;

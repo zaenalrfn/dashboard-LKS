@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="asset/style.css">
+	<title>dashboard</title>
+</head>
+<body>
+
+
+	<!-- bagian sidebar -->
+
+	<!-- <div class="sidebar">
+		<div class="profil">
+			<img src="img/profile.jpg" class="rounded-circle mt-5 mb-4" width="80">
+			<h3 class="text-light fs-5 fw-bold">Zaenal Arifin</h3>	
+		</div>
+		<div class="nav-side">
+			<ul>
+				<li class="d-flex">
+					<i class="bi bi-house-fill fs-5"></i>
+					<a href="#" class="fs-6">Home</a>
+				</li>
+				<li class="d-flex">
+					<i class="bi bi-list-ul fs-5"></i>
+					<a href="#" class="fs-6">Course</a>
+				</li>
+				<li class="d-flex">
+					<i class="bi bi-award-fill fs-5"></i>
+					<a href="#" class="fs-6">Achievements</a>
+				</li>
+				<li class="d-flex">
+					<i class="bi bi-gear-fill fs-5"></i>
+					<a href="#" class="fs-6">Settings</a>
+				</li>
+			</ul>
+		</div>
+	</div> -->
+	<input type="checkbox" id="sidebar-toggle">
+	<div id="sidebar" class="d-flex flex-column vh-100 flex-shrink-0 p-3 text-white bg-success"> <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none"><span class="fs-4">WELCOME</span> </a>
+		<hr>
+		<ul class="nav nav-pills flex-column mb-auto">
+			<li> <a href="#" class="nav-link active"> <i class="fa fa-home"></i><span class="ms-2">Home</span> </a> </li>
+			<li> <a href="#" class="nav-link text-white"> <i class="fa fa-dashboard"></i><span class="ms-2">Dashboard</span> </a> </li>
+			<li> <a href="#" class="nav-link text-white"> <i class="fa fa-first-order"></i><span class="ms-2">My Orders</span> </a> </li>
+			<li> <a href="#" class="nav-link text-white"> <i class="fa fa-cog"></i><span class="ms-2">Settings</span> </a> </li>
+			<li> <a href="#" class="nav-link text-white"> <i class="fa fa-bookmark"></i><span class="ms-2">Bookmarks</span> </a> </li>
+		</ul>
+		<hr>
+		<div class="dropdown"> <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false"> <img src="img/profile.jpg" alt="" width="32" height="32" class="rounded-circle me-2"> <strong> Zaenal Arifin </strong> </a>
+			<ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
+				<li><a class="dropdown-item" href="#">New project</a></li>
+				<li><a class="dropdown-item" href="#">Settings</a></li>
+				<li><a class="dropdown-item" href="#">Profile</a></li>
+				<li>
+					<hr class="dropdown-divider">
+				</li>
+				<li><a class="dropdown-item" href="#">Sign out</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- akhir sidebar -->
+
+
+	<!-- bagian content -->
+
+	<div class="main-content pb-5">
+		<div class="nav-content bg-light d-flex justify-content-between">
+			<label for="sidebar-toggle">
+				<a class="btn btn-secondary fs-4">
+					<i class="fa fa-bars text-light" aria-hidden="true"></i>
+				</a>
+			</label>
+
+			<div class="btn-group">
+				<button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+					<i class="fa fa-bell" aria-hidden="true"></i>
+				</button>
+				<ul class="dropdown-menu">
+					<div class="container">
+						<div class="row">
+							<div class="col">
+								<div class="notification d-flex">
+									<img src="img/profile.jpg" width="32" height="32" class="rounded-circle me-2">
+									<p>Lorem ipsum dolor sit..</p>
+								</div>
+								<div class="notification d-flex">
+									<img src="img/profile.jpg" width="32" height="32" class="rounded-circle me-2">
+									<p>Lorem ipsum dolor sit..</p>
+								</div>	
+								<div class="notification d-flex">
+									<img src="img/profile.jpg" width="32" height="32" class="rounded-circle me-2">
+									<p>Lorem ipsum dolor sit..</p>
+								</div>		
+							</div>
+						</div>
+					</div>
+				</ul>
+			</div>
+		</div>
+
+		<div class="content-card mt-5">
+			<div class="container">
+				<div class="row">
+					<h2 class="text-dark mt-4 mb-4 fs-3">Home</h2>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-md-4">
+						<div class="card mb-3">
+							<div class="card-body">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-primary">Go somewhere</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card mb-3">
+							<div class="card-body">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-danger">Go somewhere</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card mb-3">
+							<div class="card-body">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-warning">Go somewhere</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card mb-3">
+							<div class="card-body">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-info">Go somewhere</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card mb-3">
+							<div class="card-body">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-success">Go somewhere</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card mb-3">
+							<div class="card-body">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-secondary">Go somewhere</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- akhir content -->
+
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<script src="asset/script.js"></script>
+</body>
+</html>

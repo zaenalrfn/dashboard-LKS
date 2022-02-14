@@ -37,6 +37,7 @@ body {
 #sidebar-toggle:checked ~ .main-content .nav-content button {
 	margin-right: 15px;
 }
+
 /* bagian content */
 .main-content {
 	position: relative;
@@ -67,6 +68,7 @@ body {
 
 /* bagian responsive */
 @media screen and (max-width: 768px) {
+	/* bagian sidebar */
 	#sidebar {
 		z-index: 0;
 		transform: translateX(-250px);
@@ -74,10 +76,15 @@ body {
 	#sidebar-toggle:checked + #sidebar  {
 		transform: translateX(0px);
 	}
+
+	/* bagian main-content */
 	#sidebar-toggle:checked ~ .main-content  {
 		margin-left: 250px;
 	}
 	.main-content {
 		margin-left: 0px;
+	}
+	.nav-content button {
+		margin-right: 15px;
 	}
 }
